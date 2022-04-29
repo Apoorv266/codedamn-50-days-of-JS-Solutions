@@ -9,7 +9,7 @@ function reverseGivenInteger(num) {
     for (let i = text.length - 1; i >= 0; i--) {
         str += text[i]
     }
-    
+
     return str
 }
 
@@ -21,16 +21,31 @@ console.log(`Reversed integer is: ${reverseGivenInteger(num)}`)
 const num2 = 3849;
 const num3 = num2.toString()
 
-reverseGivenInteger2(num2)
-
-function reverseGivenInteger2(num2) {
- let str = ""
-    for (let i = 0; i <= num2.length-1; i++) {
-    str += num2[i] * 10
-    } 
-    console.log(str)
+function reverseGivenInteger2(num3) {
+    let str = ""
+    for (let i = num3.length - 1; i >= 0; i--) {
+        str += num3[i] % 10
+    }
+    return str
 }
 
-console.log(num3 % 10)
 
-console.log(`Reversed integer is: ${reverseGivenInteger2(num2)}`)
+
+console.log(`Reversed integer is: ${reverseGivenInteger2(num3)}`)
+
+
+//........................Codedamn Solution............................
+
+const num4 = 3849;
+
+function reverseGivenInteger(num) {
+    // write your solution here
+    return (
+        parseFloat(
+            num.toString().split('').reverse().join('')
+        ) * Math.sign(num)
+    )
+
+}
+
+console.log(`Reversed integer is: ${reverseGivenInteger(3849)}`)
