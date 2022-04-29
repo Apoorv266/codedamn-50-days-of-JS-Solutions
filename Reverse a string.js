@@ -14,7 +14,7 @@ function reverseAString(str) {
 // console.log(`Reversed string is: ${reverseAString(JavaScript is awesome)}`)
 
 
-//....................another way..........................
+//....................Codedamn's solution..........................
 
 
 const str2 = "JavaScript is awesome";
