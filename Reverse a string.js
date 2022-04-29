@@ -8,10 +8,10 @@ function reverseAString(str) {
     for (let i = reverse[0].length; i > 0; i--) {
         arr+=(reverse[0].charAt(i));
     }
-    console.log(arr.toString())
+    return arr.toString()
 }
 
-// console.log(`Reversed string is: ${reverseAString(JavaScript is awesome)}`)
+console.log(`Reversed string is: ${reverseAString(str)}`)
 
 
 //....................Codedamn's solution..........................
