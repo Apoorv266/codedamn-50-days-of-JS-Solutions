@@ -1,6 +1,6 @@
 // Write a program which returns the difference of last position of X and first position of "X"
 
-//........................My solution............................
+//.............................My solution.....................................
 
 const str = 'F(X) !== G(X) !== F(X)';
 
