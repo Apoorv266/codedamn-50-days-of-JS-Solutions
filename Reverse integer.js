@@ -1,3 +1,6 @@
+// Write a program to reverse a given integer number
+
+
 //.........................Converting into string first.............................
 
 const num = 3849;
