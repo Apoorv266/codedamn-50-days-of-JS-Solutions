@@ -1,4 +1,4 @@
-// Write a program which returns the difference of last position of X and first position of X
+// Write a program which returns the difference of last position of X and first position of "X"
 
 //........................My solution............................
 
