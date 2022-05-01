@@ -21,7 +21,7 @@ console.log(Object.entries(obj2))
 
 function isEmpty(obj2) {
     return Object.entries(obj2).length === 0
-    
+    // return the array with object's key value pair and now array length can be calculated with the help of .length 
 }
 
 console.log(`is empty object: ${isEmpty(obj2)}`)
