@@ -18,9 +18,11 @@ console.log(`is empty object: ${isEmpty(obj)}`)
 
 const obj2 = { key: 1 };
 console.log(Object.entries(obj2))
+// Object.entries create an array which contains the object items
 
 function isEmpty(obj2) {
     return Object.entries(obj2).length === 0
+    // now since the object is turned into array its length can be checked
     // return the array with object's key value pair and now array length can be calculated with the help of .length 
 }
 
