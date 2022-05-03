@@ -30,7 +30,8 @@ const filterField2 = "money"
 function removeArrayElement(filterField) {
 
     return array2.filter(function (obj) {
-            return obj.field !== filterField;
+            return obj.field !== filterField2;
+            // object whose key value is not equal to filterField2 that is "money" will added to the array2
         });
 }
 
