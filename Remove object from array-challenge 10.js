@@ -19,19 +19,19 @@ console.log(`filtered array: ${removeArrayElement(filterField)}`)
 
 //.........................Codedamn's solution.....................
 
-// const array2 = [
-//     { field: "id", operator: "eq" },
-//     { field: "cStatus", operator: "eq" },
-//     { field: "money", operator: "eq" },
-// ];
+const array2 = [
+    { field: "id", operator: "eq" },
+    { field: "cStatus", operator: "eq" },
+    { field: "money", operator: "eq" },
+];
 
-// const filterField2 = "money"
+const filterField2 = "money"
 
-// function removeArrayElement(filterField) {
+function removeArrayElement(filterField) {
 
-//     return array2.filter(function (obj) {
-//             return obj.field !== filterField;
-//         });
-// }
+    return array2.filter(function (obj) {
+            return obj.field !== filterField;
+        });
+}
 
-// console.log(removeArrayElement(filterField2))
+console.log(removeArrayElement(filterField2))
