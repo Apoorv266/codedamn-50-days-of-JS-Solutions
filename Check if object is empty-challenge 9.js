@@ -4,6 +4,7 @@ function isEmpty(obj) {
 
     for(var key in obj) {
         if(obj.hasOwnProperty(key))
+        // hasownproperty checks if the object has a key or not...if the key in not present it returns false otherwise it returns true if it is present
             return false;
             break
     }
