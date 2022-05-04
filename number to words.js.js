@@ -1,4 +1,4 @@
-let num = 2
+let num = "30"
 
 const sayNumberInEnglish = (n) => {
     let array = [
@@ -11,15 +11,31 @@ const sayNumberInEnglish = (n) => {
             6 : "six" ,
             7 : "seven",
             8 : "eight",
-            9 : "nine"
+            9 : "nine",
+            10: "ten"
+        },
+
+        {
+            20 : "twenty",
+            30 : "thirty",
+            40 : "forty",
+            50 : "fifty",
+            60 : "sixty",
+            70 : "seventy" ,
+            80 : "eighty",
+            90 : "ninty",
+            100 : "hundred"
         }
     ]
     
-    console.log(array[0])
+    // console.log(Object.keys(array[0]).length)
 
-    for (let i = 0; i < array.length; i++) {
-        if (n === 2) {
-            return array[1]
+    const keys = Object.keys(array[0]);
+    console.log(keys)
+
+    for (const key in array[1]) {
+        if (array[1].hasOwnProperty(key) && n === key) {
+            return `${array[1][key]}`;
         }
     }
 }
