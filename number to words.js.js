@@ -6,6 +6,7 @@ let num4 = num.toString()
 
 const sayNumberInEnglish = (n, n2, n3) => {
     // we will create an array with numbers with values and match it with the user string
+    // array keys are stored as strings 
     let array = [
         {
             0: "",
