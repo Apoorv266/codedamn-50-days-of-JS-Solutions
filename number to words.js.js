@@ -1,14 +1,13 @@
 let num = "10"
 let num2 = (Math.floor((num % 100) / 10) * 10).toString() // get tenth place
 let num3 = (num % 10).toString() // one's place
-let num4 = num.toString()
+// let num4 = num.toString()
 // console.log(typeof num2, typeof num3)
 
 const sayNumberInEnglish = (n, n2, n3) => {
 
     // we will create an array with numbers with values and match it with the user string
     // array keys are stored as strings 
-
 
     let array = [
         {
@@ -76,4 +75,4 @@ const sayNumberInEnglish = (n, n2, n3) => {
     }
 }
 
-console.log(`${num} in english is: ${sayNumberInEnglish(num2, num3, num4)}`)
+console.log(`${num} in english is: ${sayNumberInEnglish(num2, num3, num)}`)
