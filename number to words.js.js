@@ -1,7 +1,7 @@
 let num = "10"
 let num2 = (Math.floor((num % 100) / 10) * 10).toString() // get tenth place
 let num3 = (num % 10).toString() // one's place
-// let num4 = num.toString()
+let num4 = num.toString()
 // console.log(typeof num2, typeof num3)
 
 const sayNumberInEnglish = (n, n2, n3) => {
