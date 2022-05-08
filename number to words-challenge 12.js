@@ -1,4 +1,4 @@
-let num = 99
+let num = 2343
 let num2 = (Math.floor((num % 100) / 10) * 10).toString() // get tenth place
 let num3 = (num % 10).toString() // one's place
 let num4 = num.toString()
@@ -12,7 +12,7 @@ const sayNumberInEnglish = (n, n2, n3) => {
 
     let array = [
         {
-            0 : "zero",
+            0: "zero",
             1: "one",
             2: "two",
             3: "three",
@@ -63,15 +63,15 @@ const sayNumberInEnglish = (n, n2, n3) => {
             for (const key3 in array[2]) {
 
                 if (n === "0" && n2 === key) {
-                    return `${array[0][n2]}` 
+                    return `${array[0][n2]}`
                 }
 
-                else if (n2 === key && n === key2 && n != "10" && n2 !== 
-                "0") {
+                else if (n2 === key && n === key2 && n != "10" && n2 !==
+                    "0") {
                     return `${array[1][key2]}-${array[0][key]}`
                 }
-                
-                else if(n2 === "0" && n === key2){
+
+                else if (n2 === "0" && n === key2) {
                     return `${array[1][key2]}`
                 }
 
@@ -87,5 +87,5 @@ const sayNumberInEnglish = (n, n2, n3) => {
 console.log(`${num} in english is: ${sayNumberInEnglish(num2, num3, num4)}`)
 
 
-  
-  
+
+
