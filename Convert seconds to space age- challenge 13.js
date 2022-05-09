@@ -24,14 +24,14 @@ const spaceAge = (seconds) => {
         let neptune = 164.79132  //Earth years
 
 
-    let Mercury = ((days  / mercury)).toFixed(2)
-    let Venus = (days  / venus).toFixed(2)
-    let Earth = (days  / earth).toFixed(2)
-    let Mars = (days / mars).toFixed(2)
-    let Jupiter = (days / jupiter).toFixed(2)
-    let Saturn = (days  / saturn).toFixed(2)
-    let Uranus = (days / uranus).toFixed(2)
-    let  Neptune = (days  / neptune).toFixed(2)
+    let Mercury = parseFloat(((days  / mercury)).toFixed(2))
+    let Venus = parseFloat((days  / venus).toFixed(2))
+    let Earth = parseFloat((days  / earth).toFixed(2))
+    let Mars = parseFloat((days / mars).toFixed(2))
+    let Jupiter = parseFloat((days / jupiter).toFixed(2))
+    let Saturn = parseFloat((days  / saturn).toFixed(2))
+    let Uranus = parseFloat((days / uranus).toFixed(2))
+    let  Neptune = parseFloat((days  / neptune).toFixed(2))
 
     yearsInAllPlanets.Mercury = Mercury
     yearsInAllPlanets.Venus = Venus
@@ -45,7 +45,7 @@ const spaceAge = (seconds) => {
 	return yearsInAllPlanets
 }
 
-console.log(spaceAge(436575687))
+console.log(spaceAge(65965561))
 
 // REFERENCE : https://museumsvictoria.com.au/media/1869/calculate-your-age-on-other-planets.pdf
 
