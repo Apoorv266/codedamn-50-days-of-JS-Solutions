@@ -1,8 +1,8 @@
-let num = 1323
+let num = 959
 let num2 = (Math.floor((num % 100) / 10) * 10).toString() // get tenth place
 let num3 = (num % 10).toString() // one's place
 let num4 = num.toString()
-let num5 =  Math. floor(num / 100 % 10)
+let num5 =  Math. floor(num / 100 % 10).toString()
 
 console.log( num2,num3, num4, num5)
 
@@ -55,6 +55,7 @@ const sayNumberInEnglish = (n, n2, n3 ,n4) => {
     // console.log(Object.keys(array[0]).length)
     console.log("ten's place n :", n)
     console.log("one's place n2:", n2)
+    console.log("hundreds's place n4:", n4)
 
     const keys = Object.entries(array[0]);
     // console.log(keys)
@@ -67,9 +68,9 @@ const sayNumberInEnglish = (n, n2, n3 ,n4) => {
                     return `${array[0][n2]}`
                 }
 
-                else if (n2 === key && n === key2 && n != "10" && n2 !==
+                else if ( n2 === key && n === key2 && n != "10" && n2 !==
                     "0") {
-                    return `${array[1][key2]}-${array[0][key]}`
+                    return  `${array[0][n4]} hundred ${array[1][key2]}-${array[0][key]}` 
                 }
 
                 else if (n2 === "0" && n === key2) {
