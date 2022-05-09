@@ -12,21 +12,26 @@ const spaceAge = (seconds) => {
             Neptune: 0,
         }
 
-        let days = (( seconds / 3600 ) / 24) / 365
+        let days = (( seconds / 3600 ) / 24) / 365.25
 
+        let mercury = 0.2408467 //Earth years
+        let venus = 0.61519726 //Earth years
+        let earth = 1 //Earth years
+        let mars = 1.8808158 //Earth years
        let  jupiter = 11.862615 //Earth years
         let saturn = 29.447498  //Earth years
         let uranus = 84.016846  //Earth years
         let neptune = 164.79132  //Earth years
 
-    let Mercury =  ((days * 365 ) / 88).toFixed(2)
-    let Venus = ((days * 365 ) / 225).toFixed(2)
-    let Earth = ((days * 365 ) / 365).toFixed(2)
-    let Mars = ((days * 365 ) / 687).toFixed(2)
-    let Jupiter = ((days * 365 ) / jupiter).toFixed(2)
-    let Saturn = ((days * 365 ) / saturn).toFixed(2)
-    let Uranus = ((days * 365 ) / uranus).toFixed(2)
-    let  Neptune = ((days * 365 ) / neptune).toFixed(2)
+
+    let Mercury = ((days  / mercury)).toFixed(2)
+    let Venus = (days  / venus).toFixed(2)
+    let Earth = (days  / earth).toFixed(2)
+    let Mars = (days / mars).toFixed(2)
+    let Jupiter = (days / jupiter).toFixed(2)
+    let Saturn = (days  / saturn).toFixed(2)
+    let Uranus = (days / uranus).toFixed(2)
+    let  Neptune = (days  / neptune).toFixed(2)
 
     yearsInAllPlanets.Mercury = Mercury
     yearsInAllPlanets.Venus = Venus
@@ -42,3 +47,6 @@ const spaceAge = (seconds) => {
 
 console.log(spaceAge(436575687))
 
+// REFERENCE : https://museumsvictoria.com.au/media/1869/calculate-your-age-on-other-planets.pdf
+
+// http://girlstart.org/wp-content/uploads/2017/07/13.Age-on-Planets.pdf
