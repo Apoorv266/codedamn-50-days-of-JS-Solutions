@@ -1,4 +1,5 @@
 
+//  to convert to base 
 
 const convertDigitsToAskedBase = (digits, baseA, baseB) => {
 	if (baseA <= 1 || baseA % 1) throw new Error('Wrong input base')
