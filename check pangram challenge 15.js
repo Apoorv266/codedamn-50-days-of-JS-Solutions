@@ -1,16 +1,13 @@
 
 
 
-let input = "The quick brown fox jumps over the lazy dog"
+let input = "W promptly judgd antiqu ivory buckls for th nxt priz"
 let input2 = input.toLowerCase()
 let input3 = input2.split("")
 
 const isPangram = (input3) => {
 
     let arr = []
-    let regex = /([a-z])(?!.*\1)/gi
-    let bool = false
-
     for (let i = 0; i < input3.length; i++) {
         if (input3[i] != " ") {
             arr.push(input3[i])
@@ -18,9 +15,16 @@ const isPangram = (input3) => {
         }
     }
    
+    let uniqueChars = [...new Set(arr)];
 
-    // console.table(arr)
-    return arr2
+    if(uniqueChars.length === 26){
+        return true
+    }
+
+    else{
+        return false
+    }
+       
 }
 
 console.log(isPangram(input3))
