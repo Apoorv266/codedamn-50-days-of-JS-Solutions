@@ -11,7 +11,8 @@ const isPangram = (input3) => {
     }
     let uniqueChars = [...new Set(arr)]; // removing duplicate from the array so that only 26 alphabets are left
     if(uniqueChars.length === 26){  //  now since only alphabets are left , we will check the length of array as 26 since there are 26 alphabets
-        return true
+        
+        return true // return true if length is equal to 26
     }
     else{
         return false // return false if length is not equal to 26
