@@ -14,7 +14,7 @@ const isPangram = (input3) => {
         return true
     }
     else{
-        return false
+        return false // return false if length is not equal to 26
     }
        
 }
