@@ -25,3 +25,11 @@ console.log(isPangram(input3))
 //     const inputLowered = input.toLowerCase()
 //     return [..."abcdefghijklmnopqrstuvwxyz"].every(c => inputLowered.includes(c))
 // };
+
+
+//........................Codedamn's solution................................
+
+const isPangram2 = (input) => {
+    const inputLowered = input.toLowerCase()
+    return [..."abcdefghijklmnopqrstuvwxyz"].every(c => inputLowered.includes(c))
+};
