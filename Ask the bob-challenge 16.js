@@ -11,7 +11,7 @@
 
 function hey(message) {
 let regex = /^[A-Z]*$/
-if (regex.test(message)) {
+if (message.match(regex)) {
     console.log("true")
 }
 
