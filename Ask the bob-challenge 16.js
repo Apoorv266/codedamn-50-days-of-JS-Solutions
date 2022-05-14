@@ -10,11 +10,11 @@
 
 
 function hey(message) {
-    let regex = /^[A-Z]*$/g
+    let regex = /[A-Z]/g
     if (message.match(regex)) {
         console.log("true")
     }
 
 }
 
-console.log(hey("Hsdcsdc"))
+console.log(hey("aaa"))
