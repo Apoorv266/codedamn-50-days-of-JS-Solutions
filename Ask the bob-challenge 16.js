@@ -55,7 +55,7 @@ function hey(message) {
         
         // we have split the "message" letter by letter and stored in an array...now we have looped over each character of the "message" using foreach....now if the characters matches with [a-zA-Z] they are added to pureLetterString as string
 
-        // now this pureLetterString string goes into "inUpper" function where it returns the statement (!/[a-z]/.test(string) && /[A-Z]/.test(string))
+        // now this pureLetterString string goes into "inUpper" function where it returns the statement (!/[a-z]/.test(string) && /[A-Z]/.test(string)) which is further used in if statement
         if (/[a-zA-Z]/.test(character)) {
             pureLetterString += character
             console.log(pureLetterString)
