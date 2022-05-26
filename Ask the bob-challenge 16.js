@@ -13,7 +13,7 @@ function hey(message) {
     let msg = message.split(" ").join("")
     let regex = /^[A-Z]/g
     let regex2 = /^[a-z]/g
-    console.log(msg)
+  
 
 
     if (message.charAt(message.length - 1) === '?' && regex.test(msg)) {
@@ -38,7 +38,7 @@ function hey(message) {
 }
 
 
-console.log(hey("IUHRWGR SWGI"))
+console.log(hey(""))
 
 
 
@@ -48,7 +48,7 @@ const isUpper = (string) => {
     return !/[a-z]/.test(string) && /[A-Z]/.test(string)
 }
 
-function hey(message) {
+function hey2(message) {
     // Code here
     let pureLetterString = ""
     message.split("").forEach(character => { 
@@ -58,7 +58,7 @@ function hey(message) {
         // now this pureLetterString string goes into "inUpper" function where it returns the statement (!/[a-z]/.test(string) && /[A-Z]/.test(string)) which is further used in if statement
         if (/[a-zA-Z]/.test(character)) {
             pureLetterString += character
-            console.log(pureLetterString)
+         
         }
     })
 
@@ -80,4 +80,4 @@ function hey(message) {
     return "Whatever."
 }
 
-console.log(hey('how are you?'))
+console.log(hey2('how are you?'))
