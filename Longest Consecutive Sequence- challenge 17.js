@@ -3,6 +3,7 @@
 
  let arr2 = new Set(arr.sort())
 // sort arrange the digits in ascending order
+// to arrange digits in array in ascending order we use arr.sort().reverse()
  console.log(arr2)
  const longestConsecutiveSequence = (inputArray) => {
 
