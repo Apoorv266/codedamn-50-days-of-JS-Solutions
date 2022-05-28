@@ -15,7 +15,7 @@
      
     }
 
-    console.log(longestConsecutiveSequence(arr2))
+    console.log(longestConsecutiveSequence(arr2))  // console
 
 
     // sort arrange the digits in array in ascending order we use arr.sort()
