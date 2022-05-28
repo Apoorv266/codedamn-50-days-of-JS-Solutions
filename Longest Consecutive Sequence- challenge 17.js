@@ -1,4 +1,4 @@
-// find longest consecutive sequenc
+// find longest consecutive sequence
  
  
  let arr = [0,3,7,2,5,8,4,6,0,1,1,3]
