@@ -8,7 +8,7 @@ let arr3 = Array.from(arr2).sort()
 
 
  const longestConsecutiveSequence = (inputArray) => {
-
+let arr = []
   for (let i = 0; i < inputArray.length; i++) {
       const element = inputArray[i];
       console.log(element)
