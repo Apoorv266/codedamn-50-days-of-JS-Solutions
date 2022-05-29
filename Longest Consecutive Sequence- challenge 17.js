@@ -3,15 +3,17 @@
  
  let arr = [0,3,7,2,5,8,4,6,0,1,1,3]
 // removing the duplicates by using set()
- let arr2 = new Set(arr.sort())
+ let arr2 = new Set(arr)
 
- console.log(arr2)
+let arr3 = Array.from(arr2)
+
+ console.log(arr3)
  const longestConsecutiveSequence = (inputArray) => {
 
-    inputArray.map(element => {
-        
-        return element 
-    });
+  for (let i = 0; i < inputArray.length; i++) {
+      const element = inputArray[i];
+      console.log(element)
+  }
      
     }
 
