@@ -5,7 +5,9 @@ let arr = [100, 4, 200, 1, 3, 2]
 
 let arr2 = new Set(arr)
 let arr3 = Array.from(arr2).sort(function (a, b) { return a - b });
-console.log(arr3[2 - 1] - 1)
+console.log(arr3[0])
+console.log(arr3[0 - 1] + 1)  // less should be nan
+console.log(arr3[0 + 1] - 1)
 
 // const longestConsecutiveSequence = (inputArray) => {
 
