@@ -1,7 +1,7 @@
 // find longest consecutive sequence
 
 
-let arr = [4,1,3,2,]
+let arr = [0,3,7,2,5,8,4,6,0,1]
 
 let arr2 = new Set(arr)
 let arr3 = Array.from(arr2).sort(function (a, b) { return a - b });
@@ -11,9 +11,9 @@ console.log(isNaN(arr3[1 - 1] + 1))
 
 const longestConsecutiveSequence = (inputArray) => {
 
-    console.log(inputArray[0])
-    console.log(inputArray[0 - 1])  // less should be nan
-    console.log(inputArray[0])
+    console.log(inputArray[3])
+    console.log(inputArray[3 - 1] + 1)  // less should be nan
+    console.log(inputArray[3 + 1])
 
 
     let arrnew = []
@@ -26,8 +26,8 @@ const longestConsecutiveSequence = (inputArray) => {
             arrnew.push(inputArray[i])
         }
 
-        else if ((inputArray[i + 1]) !== inputArray[i]){
-            arrnew.push(inputArray[i ])
+        else if ((inputArray[i + 1]) !== undefined){
+            arrnew.push(inputArray[i - 1])
         }
     }
     console.log(arrnew)
