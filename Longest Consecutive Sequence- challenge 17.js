@@ -26,14 +26,13 @@ const longestConsecutiveSequence = (inputArray) => {
        arrnew.push(inputArray[i])
         }
 
-
         
-        else if (((inputArray[i] + 1) - 1) === inputArray[i]){
+        else if ((inputArray[i + 1] - 1) !== inputArray[i]){
             arrnew.push(inputArray[i])
         }
+        
 
-
-        else if ((inputArray[i + 1] - 1) !== inputArray[i]){
+        else if (((inputArray[i] + 1) - 1) === inputArray[i]){
             arrnew.push(inputArray[i])
         }
     } 
