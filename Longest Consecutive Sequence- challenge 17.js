@@ -13,7 +13,7 @@ const longestConsecutiveSequence = (inputArray) => {
 
     console.log(inputArray[0])
     console.log(inputArray[0 - 1] + 1)  
-    console.log(inputArray[8])
+    console.log(inputArray[8 + 1] - 1)
 
 
     let arrnew = []
