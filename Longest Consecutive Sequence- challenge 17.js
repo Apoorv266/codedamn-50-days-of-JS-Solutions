@@ -12,7 +12,7 @@ console.log(isNaN(arr3[1 - 1] + 1))
 const longestConsecutiveSequence = (inputArray) => {
 
     console.log(inputArray[0])
-    console.log(inputArray[0 - 1] + 1)  // less should be nan 
+    console.log(inputArray[0 - 1] + 1)  
     console.log(inputArray[8])
 
 
