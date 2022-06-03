@@ -1,7 +1,7 @@
 // find longest consecutive sequence
 
 
-let arr = [0,3,7,2,5,8,4,6,0,1] 
+let arr = [0,3,7,2,5,8,4,6,0,100] 
 
 let arr2 = new Set(arr)
 let arr3 = Array.from(arr2).sort(function (a, b) { return a - b });
