@@ -46,19 +46,7 @@ longestConsecutiveSequence(arr3)
 // to arrange digits in array in ascending order we use arr.sort().reverse()
 
 
-
-
-// if (isNaN(inputArray[0 - 1] + 1) === true) {
-            //     arrnew.push(inputArray[i]);
-            // }
-
-            // else if (isNaN(inputArray[0 + 1] - 1) === true){
-            //     arrnew.push(...arrnew, inputArray[i]); 
-            // }
-
-
-
-            //.....................................................................................
+//.....................................................................................
 
 
             
