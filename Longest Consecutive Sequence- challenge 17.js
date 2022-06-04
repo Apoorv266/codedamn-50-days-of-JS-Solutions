@@ -1,7 +1,7 @@
 // find longest consecutive sequence
 
 
-let arr = [100, 7, 4, 5, 6, 7, 8, 100, 200, 9,] 
+let arr = [0,2, 3, 4, 100]
 
 let arr2 = new Set(arr)
 let arr3 = Array.from(arr2).sort(function (a, b) { return a - b });
@@ -27,15 +27,14 @@ const longestConsecutiveSequence = (inputArray) => {
         arrnew.push(inputArray[i])
         }
 
+        else if ((inputArray[i - 1] + 1) !== inputArray[i] && inputArray[i] == (inputArray[i + 1] - 1)){
+            arrnew.push(inputArray[i])
+        }
+
         
         else if ((inputArray[i - 1] + 1) == inputArray[i] && inputArray[i] !== (inputArray[i + 1] - 1)) {
             arrnew.push(inputArray[i])
         }
-
-
-    //     else if (((inputArray[i] + 1) - 1) === inputArray[i]){
-    //         arrnew.push(inputArray[i])
-    //     }
     } 
     console.log(arrnew)
 }
