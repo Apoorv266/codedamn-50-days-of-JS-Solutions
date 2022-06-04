@@ -18,6 +18,7 @@ const longestConsecutiveSequence = (inputArray) => {
 
     let arrnew = []
     for (let i = 0; i < inputArray.length; i++) {
+        
      if ((inputArray[i - 1]) == undefined){
             arrnew.push(inputArray[i])
         }
