@@ -1,19 +1,19 @@
 // find longest consecutive sequence
 
 
-let arr = [200,0 , 2, 3, 4, 5, 100] 
+let arr = [100, 7, 4, 5, 6, 7, 8, 100, 200, 9,] 
 
 let arr2 = new Set(arr)
 let arr3 = Array.from(arr2).sort(function (a, b) { return a - b });
 console.log(arr3)
 
-console.log(isNaN(arr3[1 - 1] + 1))
+// console.log(isNaN(arr3[1 - 1] + 1))
 
 const longestConsecutiveSequence = (inputArray) => {
 
     console.log(inputArray[0])
     console.log(inputArray[0 - 1])  
-    // console.log(inputArray[8 + 1] - 1)
+    console.log(inputArray[0 + 1] - 1)
 
 
     let arrnew = []
@@ -28,7 +28,7 @@ const longestConsecutiveSequence = (inputArray) => {
         }
 
         
-        else if ((inputArray[i + 1] - 1) == inputArray[i]){
+        else if ((inputArray[i - 1] + 1) == inputArray[i] && inputArray[i] !== (inputArray[i + 1] - 1)) {
             arrnew.push(inputArray[i])
         }
 
