@@ -7,8 +7,6 @@ let arr2 = new Set(arr)
 let arr3 = Array.from(arr2).sort(function (a, b) { return a - b });
 console.log(arr3)
 
-// console.log(isNaN(arr3[1 - 1] + 1))
-
 const longestConsecutiveSequence = (inputArray) => {
 
     console.log(inputArray[0])
