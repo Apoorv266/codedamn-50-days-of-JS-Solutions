@@ -1,18 +1,13 @@
 // find longest consecutive sequence
 
 
-let arr = [34, 543, 34, 23, 32, 42, 0, 3, 7, 2, 5, 8, 4, 6, 0, 1, 12, 13, 14, 15]
+let arr = [0, 1, 2, 3, 5, 6, 7, 9, 10]
 
 let arr2 = new Set(arr)
 let arr3 = Array.from(arr2).sort(function (a, b) { return a - b });
 console.log(arr3)
 
 const longestConsecutiveSequence = (inputArray) => {
-
-    // console.log(inputArray[0])
-    // console.log(inputArray[0 - 1])  
-    // console.log(inputArray[0 + 1] - 1)
-
 
     let arrnew = []
     for (let i = 0; i < inputArray.length; i++) {
@@ -36,15 +31,36 @@ const longestConsecutiveSequence = (inputArray) => {
     }
     console.log(arrnew)
 
-    let arr2 = []
 
-    for (let j = 0; j < arrnew.length; j++) {
-        if (arrnew[j + 1] - 1 === arrnew[j]) {
-            arr2.push(arrnew[j])
+    // let arr2 = []
+    // for (let i = 0; i < arrnew.length; i++) {
+    //     if ( arrnew[i] != arrnew[i + 1] - 1 ) {
+    //         arr2.push(arrnew[i])
+    //     }
+    // }
+    // console.log(arr2)
+
+
+    var result = []
+    for (var i = 0; i < arrnew.length; i++) {
+        if ( arrnew[i] === 0) {
+            result.push([arrnew[0]])
+        } 
+
+
+        else if (arrnew[i] != arrnew[i - 1] + 1) {
+            result.push([arrnew[i]])
+        } 
+        
+        else {
+            tmp = result[result.length - 1]
+            tmp.push(arrnew[i])
+            result[result.length - 1] = tmp
         }
     }
 
-    console.log(arr2)
+console.log(result)
+
 
 
 }
