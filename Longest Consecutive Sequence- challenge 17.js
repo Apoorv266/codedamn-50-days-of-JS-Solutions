@@ -34,15 +34,15 @@ const longestConsecutiveSequence = (inputArray) => {
             arrnew.push(inputArray[i])
         }
     }
-    // console.log(arrnew)
+    console.log(arrnew.length)
 
     let arr2 = []
     for (let i = 0; i < arrnew.length; i++) {
-        if (arrnew[i + 1] - 1 === arrnew[i]) {
+        // if (arrnew[i + 1] - 1 === arrnew[i]) {
             arr2.push(arrnew[i])
-        }
+        // }
     }
-    
+
     console.log(arr2)
 
 }
