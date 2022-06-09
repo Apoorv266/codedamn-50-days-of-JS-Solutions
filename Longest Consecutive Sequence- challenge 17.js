@@ -5,7 +5,7 @@ let arr = [1, 2, 3, 5, 6, 7]
 
 let arr2 = new Set(arr)
 let arr3 = Array.from(arr2).sort(function (a, b) { return a - b });
-console.log(arr3)
+// console.log(arr3)
 
 const longestConsecutiveSequence = (inputArray) => {
 
@@ -29,7 +29,7 @@ const longestConsecutiveSequence = (inputArray) => {
             arrnew.push(inputArray[i])
         }
     }
-    console.log(arrnew)
+    // console.log(arrnew)
 
 
     let arr2 = []
@@ -63,14 +63,15 @@ const longestConsecutiveSequence = (inputArray) => {
         else {
             // console.log(result)
             tmp = result[result.length - 1]
+            // console.log("this is temp", tmp)
             tmp.push(arrnew[i])
             result[result.length - 1] = tmp
         }
     }
     
 
-    console.log(result.length)
-    console.log(result)
+    // console.log(result.length)
+    // console.log(result)
 
 }
 
@@ -84,6 +85,6 @@ longestConsecutiveSequence(arr3)
 //.....................................................................................
 
 
-let arr4 = [[1], [5] , [7]]
-console.log(arr4.length)
-console.log(arr4[arr4.length - 1])   // [7]
+// let arr4 = [[1], [5] , [7]]
+// console.log(arr4.length)
+// console.log(arr4[arr4.length - 1])   // [7]
