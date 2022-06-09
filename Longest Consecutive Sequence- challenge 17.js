@@ -50,6 +50,7 @@ const longestConsecutiveSequence = (inputArray) => {
 
     
     var result = []
+
     for (var i = 0; i < arrnew.length; i++) {
         if (arrnew[i] === 0) {
             result.push([arrnew[0]])
@@ -59,16 +60,15 @@ const longestConsecutiveSequence = (inputArray) => {
         else if (arrnew[i] != arrnew[i - 1] + 1) {
             result.push([arrnew[i]])
         }
+        
 
         else {
-            // console.log(result)
             tmp = result[result.length - 1]
-            // console.log("this is temp", tmp)
             tmp.push(arrnew[i])
             result[result.length - 1] = tmp
         }
     }
-    
+    console.log(result)
 
     // console.log(result.length)
     // console.log(result)
