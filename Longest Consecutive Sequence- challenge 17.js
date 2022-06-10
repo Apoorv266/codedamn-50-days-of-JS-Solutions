@@ -63,7 +63,7 @@ const longestConsecutiveSequence = (inputArray) => {
         
 
         else {
-            // the last array of the array result will be added with current element
+            // the last array of the array result will be added with current element 
             tmp = result[result.length - 1]
             tmp.push(arrnew[i])
             result[result.length - 1] = tmp
