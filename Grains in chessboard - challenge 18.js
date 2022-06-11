@@ -11,17 +11,17 @@ for (let i = 0; i <= x; i++) {
         int = int + int
     }
 }
-console.log(int)
-
-// console.log(BigInt(int))
+console.log(`Grain on ${x} board is`,int)
+console.log(BigInt(int))
 }
 
 else{
 alert("Number should be less than equal to 64")
 }
 
+//---------------------------Codedamn's solution---------------------------------------
 
-
+console.log("--------------------------------")
 
 const totalGrains = () => {
     let result = 1;
