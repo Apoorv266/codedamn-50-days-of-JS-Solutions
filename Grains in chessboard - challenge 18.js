@@ -1,7 +1,8 @@
-let int = 1
 
-for (let i = int ; i <= 5 ; i++){
-    int = int * i
+    let int = 1
+for (let i = 0 ; i <= 64; i++){
+
+    int = int + int
+
+    console.log(int)
 }
-
-console.log(int)
