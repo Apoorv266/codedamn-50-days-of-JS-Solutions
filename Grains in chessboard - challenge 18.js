@@ -6,7 +6,7 @@ if(x <= 64){
 for (let i = 0; i <= x; i++) {
     if (int === 0) {
      int = 1
-    }
+    } 
     else {
         int = int + int
     }
