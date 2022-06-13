@@ -8,7 +8,7 @@ for (let i = 0; i <= x; i++) {
      int = 1
     } 
     else {
-        int = int + int
+        int = int + int 
     }
 }
 console.log(`Grain on ${x} board is`,int)
