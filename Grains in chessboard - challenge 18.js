@@ -12,7 +12,7 @@ for (let i = 0; i <= x; i++) {
     }
 }
 console.log(`Grain on ${x} board is`,int)
-console.log(BigInt(int))
+console.log(BigInt(int)) 
 }
 
 else{
