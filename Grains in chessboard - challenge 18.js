@@ -1,7 +1,7 @@
 
 let int = 0
 let x = window.prompt("find number of grains on square no : ")
-
+ 
 if(x <= 64){
 for (let i = 0; i <= x; i++) {
     if (int === 0) {
