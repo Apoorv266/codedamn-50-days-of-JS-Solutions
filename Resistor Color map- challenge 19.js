@@ -35,9 +35,9 @@ const TEST_CASE_1 = 'blue'
 const TEST_CASE_2 = 'white'
 
 const colorCode2 = (color) => {
-    const colorMap = new Map()
+    const colorMap = new Map()        // creating a new map with name colorMap
 
-    colorMap.set('Black', 0)
+    colorMap.set('Black', 0)         // setting items to new map colorMap
     colorMap.set('Brown', 1)
     colorMap.set('Red', 2)
     colorMap.set('Orange', 3)
@@ -48,10 +48,11 @@ const colorCode2 = (color) => {
     colorMap.set('Grey', 8)
     colorMap.set('White', 9)
 
-    console.log(color.charAt(0).toUpperCase())     
-    console.log(color.substr(1))             
-    console.log(color.charAt(0).toUpperCase() + color.substr(1))
-    return colorMap.get(color.charAt(0).toUpperCase() + color.substr(1))
+    console.log(colorMap)
+    console.log(color.charAt(0).toUpperCase())      // W
+    console.log(color.substr(1))                    // hite
+    console.log(color.charAt(0).toUpperCase() + color.substr(1))   // W + hite = White
+    return colorMap.get(color.charAt(0).toUpperCase() + color.substr(1))  // Searching White in map "colorMap" and returning its value (White = 9)
 }
 
 console.log(colorCode2(TEST_CASE_1))
