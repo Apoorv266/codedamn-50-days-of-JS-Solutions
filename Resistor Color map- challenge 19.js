@@ -48,7 +48,7 @@ const colorCode2 = (color) => {
     colorMap.set('Grey', 8)
     colorMap.set('White', 9)
 
-    console.log(colorMap)
+    console.log(colorMap)                           // printing colorMap map
     console.log(color.charAt(0).toUpperCase())      // W
     console.log(color.substr(1))                    // hite
     console.log(color.charAt(0).toUpperCase() + color.substr(1))   // W + hite = White
