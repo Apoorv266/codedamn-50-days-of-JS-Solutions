@@ -15,9 +15,15 @@ const Colfun = (ColCase) => {
         White: 9,
     }
 
+    for (const iterator in colObj) {
+        // if (ColCase === iterator) {
+            console.log(iterator)
+        // }
+    }
+
 }
 
 let col = "Brown"
 let ColCase = col.toLowerCase()
 
-console.log(ColCase)
+Colfun()
