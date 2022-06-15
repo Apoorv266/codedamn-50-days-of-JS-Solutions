@@ -1,16 +1,13 @@
 const unionOfArrays = (arr1, arr2) => {
 
     dup_arr = [...arr1]
-    for (let i = 0; i < arr1.length; i++) {
+    
         arr2.map((item) => {
             if (arr1.includes(item) === false) {
                 dup_arr.push(item)
             }
         })
         return dup_arr;
-
-    }
-
 
 };
 
