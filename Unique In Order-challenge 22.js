@@ -8,7 +8,10 @@ let uniqueInOrder = (iterable) => {
 
     let newArr = []
     for (let i = 0; i < arrNew.length; i++) {
-        if (arrNew[i] !== arrNew[i + 1]) {   // here we are checking value as well as type, for last element the type of arrNew[i] is string where as type of arrNew[i + 1] would be undefined so arrNew[i] will be pushed to array
+        if (arrNew[i] !== arrNew[i + 1]) { 
+            // if current element is not equal to its next element in type and value , it will get filtered to new array
+            
+            // here we are checking value as well as type, for last element the type of arrNew[i] is string where as type of arrNew[i + 1] would be undefined so arrNew[i] will be pushed to array
             newArr.push(arrNew[i])
         }
     }
