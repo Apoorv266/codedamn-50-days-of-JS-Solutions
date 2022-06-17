@@ -1,17 +1,16 @@
 let uniqueInOrder = (iterable) => {
     //your code here - remember iterable can be a string or an array
     let arrNew = Array.from(iterable)
-    const letters = new Set(iterable);
-    let arr = Array.from(letters)
-    console.log(arr)
-  
-    arrNew.map((item) => {
-        if (arrNew.includes(item) === false) {
-            arr.push(item)
-        }
-    })
     console.log(arrNew)
+   
+    let newArr = []
+    for (let i = 0; i < arrNew.length; i++) {
+     if (arrNew[i] != arrNew[(i + 1)]) {
+        newArr.push(arrNew[i])
+     }
+    }
+    console.log(newArr)
 };
   
 
-uniqueInOrder('AABBCCAA')
+uniqueInOrder([1,2,2,3,3])
