@@ -1,9 +1,9 @@
 let uniqueInOrder = (iterable) => {
     //your code here - remember iterable can be a string or an array
-    let set = new set(iterable)
-    console.log(set)
+    const letters = new Set(iterable);
+    console.log(letters)
   
 };
   
 
-uniqueInOrder("AABBCC")
+uniqueInOrder('AAAABBBCCDAABBB')
