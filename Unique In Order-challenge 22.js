@@ -3,7 +3,7 @@ let uniqueInOrder = (iterable) => {
     let arrNew = Array.from(iterable)
     console.log(arrNew)
 
-    console.log(typeof arrNew[6])
+    console.log(typeof arrNew[6]) 
     console.log(typeof arrNew[6 + 1])  
 
     let newArr = []
