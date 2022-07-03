@@ -6,7 +6,7 @@ let uniqueInOrder = (iterable) => {
     console.log(typeof arrNew[6])   
     console.log(typeof arrNew[6 + 1])   
  
-    let newArr = []
+    let newArr = [] 
     for (let i = 0; i < arrNew.length; i++) {
         if (arrNew[i] !== arrNew[i + 1]) { 
             // if current element is not equal to its next element in type and value , it will get filtered to new array
