@@ -5,7 +5,7 @@ let uniqueInOrder = (iterable) => {
  
     console.log(typeof arrNew[6])   
     console.log(typeof arrNew[6 + 1])   
-      
+       
     let newArr = [] 
     for (let i = 0; i < arrNew.length; i++) {
         if (arrNew[i] !== arrNew[i + 1]) { 
